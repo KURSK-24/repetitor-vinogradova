@@ -96,6 +96,14 @@ section{padding:56px 0}
 .subjects{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
 .subjects span{background:var(--navy);color:#fff;font-weight:700;padding:8px 16px;border-radius:999px;font-size:.95rem}
 
+/* ситуации */
+.cases{display:grid;gap:14px;margin-top:24px}
+@media(min-width:720px){.cases{grid-template-columns:1fr 1fr}}
+.case{background:#fff;border:1px solid var(--line);border-left:4px solid var(--wine);border-radius:18px;padding:20px 22px}
+.case b{display:block;font-family:"Playfair Display",serif;font-size:1.2rem;color:var(--wine);margin-bottom:8px;line-height:1.25}
+.case p{margin:0;font-size:.97rem}
+.case .pain{color:var(--muted);margin-bottom:10px;font-style:italic}
+
 /* цена */
 .price-card{background:var(--navy);color:#fff;border-radius:28px;padding:32px 24px;display:grid;gap:22px;align-items:center}
 .price-card h2{color:#fff}
@@ -228,6 +236,20 @@ footer{padding:28px 0 110px;text-align:center;color:var(--muted);font-size:.85re
       <div class="dir"><b>Вступительные в вуз</b><span>Подготовка к экзаменам при поступлении</span></div>
       <div class="dir"><b>Углублённо по школе</b><span>Для тех, кому школьной программы мало</span></div>
       <div class="dir"><b>Подтянуть отставание</b><span>Закрываем пробелы и возвращаем уверенность</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- СИТУАЦИИ -->
+<section id="cases" style="padding-top:0">
+  <div class="wrap">
+    <h2>Узнаёте свою ситуацию?</h2>
+    <p class="lead">Четыре ситуации, с которыми можно прийти, и что я делаю в каждой</p>
+    <div class="cases">
+      <div class="case"><b>Ребёнок отстаёт</b><p class="pain">Оценки ниже, чем хотелось бы, на уроке теряется, а пробелов с каждым месяцем больше</p><p>Начинаем с того уровня, где ребёнок сейчас. Сложные темы объясняю простыми словами, и предмет перестаёт быть набором непонятных правил</p></div>
+      <div class="case"><b>Готовились, а на пробниках провал</b><p class="pain">Ребёнок перегружен, подготовка вроде шла, и только на тестах стало видно, что она была слабой</p><p>Разбираем предмет по сути. Когда ученик понимает, откуда берётся ответ, ему есть на что опереться в любом задании, даже незнакомом</p></div>
+      <div class="case"><b>Олимпиады без побед</b><p class="pain">Ребёнок сильный, участвует в олимпиадах, но до призовых мест не дотягивает</p><p>Олимпиада требует уровня выше школьного. Веду углублённое изучение предмета, среди моих учеников есть победители олимпиад</p></div>
+      <div class="case"><b>Цель: поступить в вуз</b><p class="pain">Нужен высокий балл ЕГЭ или подготовка к вступительным экзаменам</p><p>Средний балл моих учеников на ЕГЭ 85,4. Как профессор я знаю, чего вуз ждёт от абитуриента, и готовлю к этому</p></div>
     </div>
   </div>
 </section>

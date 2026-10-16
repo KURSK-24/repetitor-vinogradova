@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Марина Николаевна Виноградова - репетитор по русскому языку и истории</title>
+<meta name="description" content="Подготовка к ОГЭ, ЕГЭ, олимпиадам и вступительным в вуз по русскому языку и истории. Доктор наук, профессор, 40 лет преподавания. Средний балл учеников на ЕГЭ 85,4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F8F4EC;
+  --card:#FFFFFF;
+  --wine:#6E1E2B;
+  --wine-2:#8A2B3B;
+  --navy:#1F3352;
+  --gold:#B08A4A;
+  --gold-soft:#F1E6D2;
+  --ink:#2A2226;
+  --muted:#6F6468;
+  --line:#E7DED0;
+  --radius:22px;
+  --shadow:0 12px 34px -20px rgba(110,30,43,.45);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;color:var(--wine);line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2rem,6vw,3.2rem)}
+h2{font-size:clamp(1.6rem,4.6vw,2.3rem)}
+h3{font-size:1.2rem}
+p{margin:0 0 1em}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+section{padding:56px 0}
+.hidden{display:none!important}
+
+/* кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;font:700 1.05rem "Manrope",sans-serif;text-decoration:none;color:#fff;background:var(--wine);padding:16px 26px;border-radius:999px;box-shadow:var(--shadow);transition:transform .15s,background .15s;min-height:54px}
+.btn:hover{background:var(--wine-2);transform:translateY(-1px)}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--wine);box-shadow:inset 0 0 0 2px var(--wine)}
+.btn.ghost:hover{background:#fff}
+.btn.wa{background:#1FA855}.btn.wa:hover{background:#178a45}
+.btn.tg{background:#2A9ED8}.btn.tg:hover{background:#1f86ba}
+.btn.call{background:var(--navy)}.btn.call:hover{background:#15243b}
+.btn svg{width:22px;height:22px;flex:none}
+.stack{display:grid;gap:12px}
+
+/* HERO */
+.hero{padding:28px 0 48px;background:radial-gradient(1200px 500px at 85% -10%,#EFE2CF 0,transparent 60%),var(--bg)}
+.hero-grid{display:grid;gap:28px;align-items:center}
+.kicker{display:inline-block;font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);background:#fff;border:1px solid var(--line);padding:6px 14px;border-radius:999px;margin-bottom:16px}
+.lead{font-size:1.12rem;color:var(--muted);max-width:34em}
+.facts{list-style:none;padding:0;margin:22px 0 26px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.facts li{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 10px;text-align:center;font-size:.82rem;color:var(--muted);line-height:1.3}
+.facts b{display:block;white-space:nowrap;font-family:"Playfair Display",serif;font-size:clamp(1.1rem,4.4vw,1.55rem);color:var(--wine);line-height:1.1;margin-bottom:2px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hero-cta small{color:var(--muted);font-size:.88rem}
+.hero-photo{position:relative;max-width:460px;margin:0 auto;width:100%;order:2}
+.hero-photo img{border-radius:28px;box-shadow:0 30px 60px -30px rgba(42,34,38,.55);aspect-ratio:1/1;object-fit:cover;width:100%}
+.badge{position:absolute;left:-6px;bottom:18px;background:#fff;border-radius:18px;padding:12px 16px;box-shadow:var(--shadow);max-width:250px;font-size:.88rem;line-height:1.35;border:1px solid var(--line)}
+.badge b{display:block;color:var(--wine);font-family:"Playfair Display",serif;font-size:1.05rem}
+@media(min-width:880px){
+  .hero{padding:56px 0 72px}
+  .hero-grid{grid-template-columns:1.1fr .9fr;gap:48px}
+  .badge{left:-28px}
+}
+
+/* почему */
+.why-grid{display:grid;gap:14px;margin-top:26px}
+@media(min-width:720px){.why-grid{grid-template-columns:1fr 1fr}}
+.why{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 18px;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.why .n{width:44px;height:44px;border-radius:14px;background:var(--gold-soft);color:var(--wine);display:grid;place-items:center;font-family:"Playfair Display",serif;font-weight:800;font-size:1.2rem}
+.why h3{margin:0 0 6px;color:var(--ink);font-family:"Manrope",sans-serif;font-weight:800;font-size:1.05rem;line-height:1.3}
+.why p{margin:0;color:var(--muted);font-size:.97rem}
+
+/* об авторе */
+.about{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-grid{display:grid;gap:28px;align-items:center}
+.about-grid img{border-radius:24px;aspect-ratio:1/1;object-fit:cover;width:100%;max-width:420px;margin:0 auto}
+@media(min-width:880px){.about-grid{grid-template-columns:.85fr 1.15fr;gap:48px}}
+.quote{font-family:"Playfair Display",serif;font-size:1.3rem;color:var(--wine);border-left:4px solid var(--gold);padding:4px 0 4px 18px;margin:20px 0;line-height:1.4}
+.regalia{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
+.regalia li{padding-left:28px;position:relative}
+.regalia li::before{content:"";position:absolute;left:4px;top:.55em;width:10px;height:10px;border-radius:50%;background:var(--gold)}
+
+/* направления */
+.dirs{display:grid;gap:12px;margin-top:24px;grid-template-columns:1fr}
+@media(min-width:620px){.dirs{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.dirs{grid-template-columns:repeat(3,1fr)}}
+.dir{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.dir b{display:block;font-size:1.05rem;color:var(--navy);margin-bottom:4px}
+.dir span{color:var(--muted);font-size:.95rem}
+.subjects{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.subjects span{background:var(--navy);color:#fff;font-weight:700;padding:8px 16px;border-radius:999px;font-size:.95rem}
+
+/* цена */
+.price-card{background:var(--navy);color:#fff;border-radius:28px;padding:32px 24px;display:grid;gap:22px;align-items:center}
+.price-card h2{color:#fff}
+.price-card p{color:#C9D3E3}
+.price-big{font-family:"Playfair Display",serif;font-size:clamp(2.6rem,9vw,3.6rem);font-weight:800;line-height:1;color:#fff}
+.price-big small{font-family:"Manrope",sans-serif;font-size:1rem;font-weight:600;color:#C9D3E3;display:block;margin-top:8px}
+.price-card .btn{background:var(--gold)}
+.price-card .btn:hover{background:#9a773c}
+@media(min-width:820px){.price-card{grid-template-columns:1.3fr 1fr;padding:44px}}
+
+/* анкета */
+.quiz-box{background:#fff;border:1px solid var(--line);border-radius:28px;padding:26px 20px;box-shadow:var(--shadow);max-width:720px;margin:24px auto 0}
+@media(min-width:620px){.quiz-box{padding:36px}}
+.progress{height:8px;background:var(--gold-soft);border-radius:99px;overflow:hidden;margin-bottom:10px}
+.progress i{display:block;height:100%;width:0;background:var(--wine);border-radius:99px;transition:width .3s}
+.step-count{font-size:.85rem;color:var(--muted);font-weight:600;margin-bottom:14px}
+.q-title{font-family:"Playfair Display",serif;font-size:1.45rem;color:var(--wine);line-height:1.25;margin:0 0 6px}
+.q-hint{color:var(--muted);font-size:.95rem;margin:0 0 16px}
+.opts{display:grid;gap:10px}
+.opt{display:block;width:100%;text-align:left;background:var(--bg);border:2px solid transparent;border-radius:16px;padding:14px 18px;font:600 1rem "Manrope",sans-serif;color:var(--ink);cursor:pointer;transition:border-color .15s,background .15s}
+.opt:hover{border-color:var(--gold)}
+.opt.on{border-color:var(--wine);background:#fff}
+.opt small{display:block;font-weight:500;color:var(--muted);font-size:.88rem;margin-top:2px}
+.field{display:grid;gap:6px;margin-bottom:14px}
+.field label{font-weight:700;font-size:.95rem}
+.field input,.field textarea{font:500 1rem "Manrope",sans-serif;padding:14px 16px;border:2px solid var(--line);border-radius:14px;background:var(--bg);color:var(--ink);width:100%}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--wine);background:#fff}
+.field textarea{min-height:96px;resize:vertical}
+.quiz-nav{display:flex;justify-content:space-between;gap:10px;margin-top:20px}
+.back{background:none;border:0;color:var(--muted);font:600 .95rem "Manrope",sans-serif;cursor:pointer;padding:10px 0}
+.back:disabled{visibility:hidden}
+.err{color:var(--wine);font-size:.9rem;font-weight:600;margin-top:8px;min-height:1.2em}
+
+/* итог анкеты */
+.done-head{display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:center;margin-bottom:18px}
+.done-head img{width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 0 0 2px var(--gold)}
+.msg-preview{background:var(--bg);border:1px dashed var(--gold);border-radius:16px;padding:16px 18px;white-space:pre-wrap;font-size:.95rem;line-height:1.55;margin:0 0 18px}
+.small-note{font-size:.85rem;color:var(--muted);margin-top:12px}
+
+/* контакты и подвал */
+.contacts{text-align:center}
+.phone-big{font-family:"Playfair Display",serif;font-size:clamp(1.7rem,6vw,2.4rem);color:var(--wine);text-decoration:none;font-weight:800;display:inline-block;margin:6px 0 20px}
+.contacts .stack{max-width:420px;margin:0 auto}
+footer{padding:28px 0 110px;text-align:center;color:var(--muted);font-size:.85rem}
+@media(min-width:880px){footer{padding-bottom:40px}}
+
+/* липкая кнопка на телефоне */
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:20;display:flex;gap:10px;transition:transform .25s}
+.sticky .btn{flex:1;padding:14px 18px;font-size:1rem}
+.sticky .btn.wa{flex:0 0 54px;padding:0}
+.sticky.away{transform:translateY(140%)}
+@media(min-width:880px){.sticky{display:none}}
+
+.toast{position:fixed;left:50%;top:18px;transform:translate(-50%,-160%);background:var(--ink);color:#fff;padding:12px 18px;border-radius:14px;font-size:.92rem;z-index:30;transition:transform .25s;max-width:calc(100% - 32px);text-align:center}
+.toast.show{transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-photo">
+      <img src="img/marina-kabinet.webp" alt="Марина Николаевна Виноградова за рабочим столом" width="900" height="900">
+      <div class="badge"><b>Марина Николаевна Виноградова</b>доктор наук, профессор, член Московской ассоциации репетиторов</div>
+    </div>
+    <div>
+      <span class="kicker">Русский язык и история</span>
+      <h1>Подготовка к ОГЭ и ЕГЭ с профессором</h1>
+      <p class="lead">Готовлю школьников к экзаменам, олимпиадам и вступительным в вуз. Ребёнок разбирается в предмете по-университетски и понимает, откуда берётся правильный ответ</p>
+      <ul class="facts">
+        <li><b>85,4</b>средний балл учеников на ЕГЭ</li>
+        <li><b>40 лет</b>преподавания и науки</li>
+        <li><b>от 1000&nbsp;₽</b>за академический час</li>
+      </ul>
+      <div class="hero-cta">
+        <a href="#anketa" class="btn">Записаться на занятия</a>
+        <small>Анкета на 1 минуту, ответ придёт в WhatsApp или Telegram</small>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ПОЧЕМУ -->
+<section id="why">
+  <div class="wrap">
+    <h2>Почему со мной выгодно готовиться к экзаменам</h2>
+    <p class="lead">Восемь причин, по которым родители выбирают занятия со мной</p>
+    <div class="why-grid">
+      <div class="why"><div class="n">1</div><div><h3>Результат в баллах</h3><p>Средний балл моих учеников на ЕГЭ 85,4. На такой балл рассчитывают, когда целятся в сильный вуз</p></div></div>
+      <div class="why"><div class="n">2</div><div><h3>Ребёнок понимает предмет</h3><p>Методика построена на университетском подходе. Разбираем, почему язык и история устроены именно так, и учимся рассуждать. Ответ на экзамене ребёнок выводит сам, по логике, без зазубренной схемы</p></div></div>
+      <div class="why"><div class="n">3</div><div><h3>Сложное простыми словами</h3><p>Объясняю трудные темы так, что их понимает и школьник, который отстаёт, и тот, кто идёт на олимпиаду</p></div></div>
+      <div class="why"><div class="n">4</div><div><h3>Любой стартовый уровень</h3><p>Работала с учениками от отстающих до победителей олимпиад. Начинаем с того места, где ребёнок сейчас</p></div></div>
+      <div class="why"><div class="n">5</div><div><h3>Знаю требования вуза изнутри</h3><p>Доктор наук и профессор с 40-летним стажем преподавательской и научной работы. Готовлю к вступительным и олимпиадам, зная, что ждут от абитуриента</p></div></div>
+      <div class="why"><div class="n">6</div><div><h3>Научное мышление на будущее</h3><p>Умение анализировать текст, сопоставлять факты и строить аргумент пригодится ребёнку и на экзамене, и на первом курсе</p></div></div>
+      <div class="why"><div class="n">7</div><div><h3>Уровень профессора от 1000&nbsp;₽</h3><p>Стоимость академического часа от 1000&nbsp;₽. Можно заниматься индивидуально или в группе</p></div></div>
+      <div class="why"><div class="n">8</div><div><h3>Член Московской ассоциации репетиторов</h3><p>Профессиональное сообщество репетиторов, в которое я вхожу</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ОБ АВТОРЕ -->
+<section class="about">
+  <div class="wrap about-grid">
+    <img src="img/marina-zanyatie.webp" alt="Марина Николаевна на занятии" width="900" height="900">
+    <div>
+      <span class="kicker">Обо мне</span>
+      <h2>Марина Николаевна Виноградова</h2>
+      <p class="quote">Моя методика базируется на университетском подходе: формирование глубокого понимания предмета и научного мышления</p>
+      <ul class="regalia">
+        <li>Доктор наук, профессор</li>
+        <li>40 лет преподавательской и научной деятельности</li>
+        <li>Член Московской ассоциации репетиторов</li>
+        <li>Готовлю к ОГЭ, ЕГЭ, олимпиадам и вступительным экзаменам в вузы</li>
+        <li>Веду углублённое изучение предмета в средней школе</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- НАПРАВЛЕНИЯ -->
+<section id="dirs">
+  <div class="wrap">
+    <h2>С чем можно прийти</h2>
+    <div class="subjects"><span>Русский язык</span><span>История</span></div>
+    <div class="dirs">
+      <div class="dir"><b>ОГЭ</b><span>Подготовка к экзамену в 9 классе</span></div>
+      <div class="dir"><b>ЕГЭ</b><span>Подготовка на высокий балл для поступления</span></div>
+      <div class="dir"><b>Олимпиады</b><span>Задания, где нужно глубокое знание предмета</span></div>
+      <div class="dir"><b>Вступительные в вуз</b><span>Подготовка к экзаменам при поступлении</span></div>
+      <div class="dir"><b>Углублённо по школе</b><span>Для тех, кому школьной программы мало</span></div>
+      <div class="dir"><b>Подтянуть отставание</b><span>Закрываем пробелы и возвращаем уверенность</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ЦЕНА -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="price-card">
+      <div>
+        <h2>Стоимость занятий</h2>
+        <p>Можно заниматься индивидуально или в группе</p>
+      </div>
+      <div>
+        <div class="price-big">от 1000 ₽<small>за академический час (45 минут)</small></div>
+        <a href="#anketa" class="btn" style="margin-top:20px">Подобрать занятия</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- АНКЕТА -->
+<section id="anketa" style="padding-top:0">
+  <div class="wrap">
+    <h2 style="text-align:center">Запишитесь на занятия</h2>
+    <p class="lead" style="text-align:center;margin:0 auto">Ответьте на несколько вопросов. Анкета соберётся в сообщение, его остаётся отправить мне в WhatsApp или Telegram</p>
+
+    <div class="quiz-box" id="quiz">
+      <div class="progress"><i id="bar"></i></div>
+      <div class="step-count" id="stepCount"></div>
+      <div id="stepBody"></div>
+      <div class="err" id="err"></div>
+      <div class="quiz-nav">
+        <button class="back" id="backBtn" type="button">← Назад</button>
+        <button class="btn" id="nextBtn" type="button">Дальше</button>
+      </div>
+    </div>
+
+    <div class="quiz-box hidden" id="done">
+      <div class="done-head">
+        <img src="img/marina-klass.webp" alt="Марина Николаевна">
+        <div><h3 style="margin:0">Заявка готова</h3><span style="color:var(--muted);font-size:.95rem">Проверьте текст и отправьте его мне</span></div>
+      </div>
+      <div class="msg-preview" id="msgPreview"></div>
+      <div class="stack">
+        <button class="btn wa" type="button" data-ch="wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Отправить в WhatsApp</button>
+        <button class="btn tg" type="button" data-ch="tg"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.7 19.5c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.2l-4.8-1.5c-1-.3-1.1-1 .2-1.5L20.5 3c.9-.3 1.6.2 1.4 1.3Z"/></svg>Отправить в Telegram</button>
+        <a class="btn call" href="tel:+79588266004"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>Позвонить</a>
+      </div>
+      <p class="small-note">В Telegram текст заявки скопируется автоматически: откроется чат, вставьте его и отправьте</p>
+      <button class="back" type="button" id="editBtn" style="margin-top:6px">← Изменить ответы</button>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section class="contacts" style="padding-top:0">
+  <div class="wrap">
+    <h2>Связаться со мной</h2>
+    <a class="phone-big" href="tel:+79588266004">+7 (958) 826-60-04</a>
+    <div class="stack">
+      <button class="btn wa" type="button" data-ch="wa" data-msg="Здравствуйте, Марина Николаевна! Пишу с вашей страницы, хочу узнать о занятиях">Написать в WhatsApp</button>
+      <button class="btn tg" type="button" data-ch="tg" data-msg="Здравствуйте, Марина Николаевна! Пишу с вашей страницы, хочу узнать о занятиях">Написать в Telegram</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Марина Николаевна Виноградова · репетитор по русскому языку и истории · +7 (958) 826-60-04</div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <a href="#anketa" class="btn">Записаться на занятия</a>
+  <button class="btn wa" type="button" data-ch="wa" data-msg="Здравствуйте, Марина Николаевна! Пишу с вашей страницы, хочу узнать о занятиях" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg></button>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+var PHONE = '79588266004';
+
+var STEPS = [
+  {key:'who', label:'Кто заполняет', q:'Кто заполняет анкету?', opts:['Родитель','Сам ученик']},
+  {key:'subject', label:'Предмет', q:'Какой предмет нужен?', opts:['Русский язык','История','Оба предмета']},
+  {key:'grade', label:'Класс', q:'В каком классе ученик?', opts:['5-7 класс','8 класс','9 класс','10 класс','11 класс','Выпускник прошлых лет']},
+  {key:'goal', label:'Цель', q:'Какая главная цель?', hint:'Выберите то, что важнее всего сейчас', opts:['ОГЭ','ЕГЭ','Олимпиада','Вступительные экзамены в вуз','Углублённо изучать предмет','Подтянуть отставание по школе']},
+  {key:'level', label:'Уровень сейчас', q:'Как ученик справляется с предметом сейчас?', opts:[
+    ['Есть отставание','оценки ниже, чем хотелось бы'],
+    ['В целом справляется','нужна системная подготовка'],
+    ['Сильный ученик','нужен максимальный балл'],
+    ['Участвует в олимпиадах','нужен уровень выше школьного']]},
+  {key:'when', label:'Когда экзамен', q:'Когда экзамен или срок цели?', opts:['В этом учебном году','В следующем учебном году','Через 2 года и позже','Срока нет, нужны знания']},
+  {key:'format', label:'Формат', q:'Какой формат занятий удобнее?', opts:['Индивидуально','В группе','Пока не знаю, нужен совет']},
+  {key:'contact', label:'Контакты', q:'Как к вам обращаться?', fields:true}
+];
+
+var answers = {}, step = 0;
+var $ = function(id){return document.getElementById(id)};
+
+function render(){
+  var s = STEPS[step];
+  $('bar').style.width = Math.round(step/STEPS.length*100)+'%';
+  $('stepCount').textContent = 'Вопрос '+(step+1)+' из '+STEPS.length;
+  $('err').textContent = '';
+  $('backBtn').disabled = step===0;
+  $('nextBtn').textContent = step===STEPS.length-1 ? 'Собрать заявку' : 'Дальше';
+  var h = '<p class="q-title">'+s.q+'</p>';
+  if(s.hint) h += '<p class="q-hint">'+s.hint+'</p>';
+  if(s.fields){
+    h += '<div class="field"><label for="fName">Ваше имя *</label><input id="fName" autocomplete="given-name" placeholder="Например, Анна"></div>'
+       + '<div class="field"><label for="fChild">Имя ученика</label><input id="fChild" placeholder="Если заполняет родитель"></div>'
+       + '<div class="field"><label for="fTime">Когда удобно связаться</label><input id="fTime" placeholder="Например, будни после 18:00"></div>'
+       + '<div class="field"><label for="fNote">Что важно рассказать</label><textarea id="fNote" placeholder="Какие темы трудно даются, какой вуз планируете, сколько раз в неделю удобно заниматься"></textarea></div>';
+    $('stepBody').innerHTML = h;
+    var c = answers.contact || {};
+    $('fName').value = c.name||''; $('fChild').value = c.child||''; $('fTime').value = c.time||''; $('fNote').value = c.note||'';
+    if(answers.who==='Сам ученик') $('fChild').parentNode.classList.add('hidden');
+    return;
+  }
+  h += '<div class="opts">';
+  s.opts.forEach(function(o){
+    var t = Array.isArray(o)?o[0]:o, sub = Array.isArray(o)?'<small>'+o[1]+'</small>':'';
+    h += '<button type="button" class="opt'+(answers[s.key]===t?' on':'')+'" data-v="'+t+'">'+t+sub+'</button>';
+  });
+  $('stepBody').innerHTML = h+'</div>';
+  $('stepBody').querySelectorAll('.opt').forEach(function(b){
+    b.onclick = function(){
+      answers[s.key] = b.dataset.v;
+      $('stepBody').querySelectorAll('.opt').forEach(function(x){x.classList.toggle('on',x===b)});
+      setTimeout(next, 220);
+    };
+  });
+}
+
+function next(){
+  var s = STEPS[step];
+  if(s.fields){
+    var name = $('fName').value.trim();
+    if(!name){ $('err').textContent = 'Напишите, как к вам обращаться'; $('fName').focus(); return; }
+    answers.contact = {name:name, child:$('fChild').value.trim(), time:$('fTime').value.trim(), note:$('fNote').value.trim()};
+    finish(); return;
+  }
+  if(!answers[s.key]){ $('err').textContent = 'Выберите один вариант'; return; }
+  step++; render(); scrollQuiz();
+}
+function back(){ if(step>0){ step--; render(); scrollQuiz(); } }
+function scrollQuiz(){ var r = $('quiz').getBoundingClientRect(); if(r.top<0) $('quiz').scrollIntoView({behavior:'smooth',block:'start'}); }
+
+function buildMsg(){
+  var c = answers.contact;
+  var L = ['Здравствуйте, Марина Николаевна! Заявка на занятия с вашей страницы', ''];
+  L.push('Меня зовут: '+c.name+(answers.who==='Родитель'?' (родитель)':' (ученик)'));
+  if(c.child) L.push('Ученик: '+c.child);
+  L.push('Предмет: '+answers.subject);
+  L.push('Класс: '+answers.grade);
+  L.push('Цель: '+answers.goal);
+  L.push('Уровень сейчас: '+answers.level);
+  L.push('Срок: '+answers.when);
+  L.push('Формат: '+answers.format);
+  if(c.time) L.push('Удобно связаться: '+c.time);
+  if(c.note){ L.push(''); L.push('Важно: '+c.note); }
+  return L.join('\n');
+}
+
+var lastMsg = '';
+function finish(){
+  lastMsg = buildMsg();
+  $('msgPreview').textContent = lastMsg;
+  $('quiz').classList.add('hidden');
+  $('done').classList.remove('hidden');
+  $('done').querySelectorAll('[data-ch]').forEach(function(b){ b.dataset.msg = lastMsg; });
+  $('done').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+$('nextBtn').onclick = next;
+$('backBtn').onclick = back;
+$('editBtn').onclick = function(){ $('done').classList.add('hidden'); $('quiz').classList.remove('hidden'); step = STEPS.length-1; render(); scrollQuiz(); };
+
+/* отправка: WhatsApp с готовым текстом, Telegram - копируем текст и открываем чат по номеру */
+var toastEl = $('toast');
+function toast(t){ toastEl.textContent = t; toastEl.classList.add('show'); clearTimeout(toast._t); toast._t = setTimeout(function(){ toastEl.classList.remove('show'); }, 3600); }
+function copy(t){ try{ if(navigator.clipboard) return navigator.clipboard.writeText(t); }catch(e){} return Promise.resolve(); }
+function go(ch, msg){
+  if(ch==='wa'){ window.open('https://wa.me/'+PHONE+'?text='+encodeURIComponent(msg), '_blank'); return; }
+  copy(msg); toast('Текст скопирован. В открывшемся чате нажмите «Вставить» и отправьте');
+  setTimeout(function(){ window.open('https://t.me/+'+PHONE, '_blank'); }, 900);
+}
+document.querySelectorAll('[data-ch]').forEach(function(b){
+  b.addEventListener('click', function(e){ e.preventDefault(); go(b.dataset.ch, b.dataset.msg); });
+});
+
+/* липкая кнопка прячется, когда анкета на экране */
+var sticky = $('sticky');
+if('IntersectionObserver' in window){
+  var io = new IntersectionObserver(function(es){ es.forEach(function(en){ sticky.classList.toggle('away', en.isIntersecting); }); }, {threshold:.15});
+  io.observe($('anketa'));
+}
+
+render();
+</script>
+</body>
+</html>
